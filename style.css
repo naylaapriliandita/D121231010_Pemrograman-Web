@@ -17,23 +17,23 @@ body {
 }
 
 /* Kolom */
-.kiri, .tengah, .kanan {
+.bioSection, .aboutmeSection, .experienceSection {
     padding: 15px;
 }
-.kiri {
+.bioSection {
     flex: 1;
     background: #AC3B61;
-    color: white;
+    color: #ffffff;
 }
-.tengah {
+.aboutmeSection {
     flex: 2;
 }
-.kanan {
+.experienceSection {
     flex: 1;
 }
 
 /* Foto */
-.kiri .foto img {
+.bioSection .photo img {
     width: 100%;
     border-radius: 10px;
     max-height: 350px;
@@ -59,34 +59,34 @@ th {
 .skills span {
     display: inline-block;
     background: #AC3B61;
-    color: white;
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 8px;
     margin: 4px;
 }
 
 /* Kontak */
-.kontak {
+.contact {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
-.kontak img {
+.contact img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     transition: 0.3s;
 }
-.kontak img:hover {
+.contact img:hover {
     transform: scale(1.2);
 }
 
 /* Education & Experience */
-.kanan ul, .tengah ul {
+.experienceSection ul, .aboutmeSection ul {
     list-style: none;
     padding: 0;
 }
-.kanan li, .tengah ul {
+.experienceSection li, .aboutmeSection li {
     margin-bottom: 15px;
     line-height: 1.4;
 }
@@ -96,7 +96,7 @@ th {
     .container {
         flex-direction: column; /* jadi vertikal */
     }
-    .kiri, .tengah, .kanan {
+    .bioSection, .aboutmeSection, .experienceSection {
         flex: none;   /* hilangkan proporsi 1:2:1 */
         width: 100%;  /* biar full lebar */
     }
